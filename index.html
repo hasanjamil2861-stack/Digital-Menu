@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffefa" />
+  <title>BREW CO. | Digital Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <span class="header-icon menu-symbol" aria-hidden="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" /></svg>
+      </span>
+      <a class="brand" href="index.html" aria-label="Brew Co. Coffee and More, home">
+        <svg class="brand-cup" viewBox="0 0 40 34" aria-hidden="true">
+          <path d="M19 2.5v2.5"/>
+          <path d="M6 9h24v6.5A11.5 11.5 0 0 1 18.5 27h-1A11.5 11.5 0 0 1 6 15.5V9Z"/>
+          <path d="M30 12h2.2a4.3 4.3 0 0 1 0 8.6H28.6"/>
+          <path d="M7 31.5h22"/>
+        </svg>
+        <span class="brand-name">BREW CO.</span>
+        <span class="brand-subtitle">COFFEE &amp; MORE</span>
+      </a>
+      <span class="header-icon cart-symbol" role="img" aria-label="Shopping cart, 0 items">
+        <svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M2.5 4.5h3.2l2.8 13.6a2.2 2.2 0 0 0 2.2 1.8h10.6a2.2 2.2 0 0 0 2.1-1.6l2.1-8.8H7.2"/>
+          <circle cx="11.2" cy="24" r="1.7"/><circle cx="20.8" cy="24" r="1.7"/>
+        </svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </span>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <h1 id="hero-heading">Good Coffee,<br /><span>Good Day.</span></h1>
+        <p>Made with love, just for you.</p>
+        <span class="heart" aria-hidden="true">♡</span>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-latte.jpg" srcset="assets/hero-latte.jpg 1400w, assets/hero-latte-4k.jpg 3840w" sizes="(min-width: 1024px) 55vw, 50vw" fetchpriority="high" alt="Latte with leaf latte art, biscuits and coffee beans" />
+      </div>
+    </section>
+    <div class="menu-title"><span></span><h2>MENU</h2><span></span></div>
+    <section class="category" id="coffee" aria-labelledby="coffee-heading">
+      <div class="category-heading">
+        <div class="category-label">
+          <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9ZM17 10h1.5a3 3 0 0 1 0 6H17M6 22h13M7 5c-1-1 1-2 0-3M12 5c-1-1 1-2 0-3"/></svg></span>
+          <h2 id="coffee-heading">COFFEE</h2>
+        </div>
+        <a class="view-all" href="coffee.html">View all <span aria-hidden="true">›</span></a>
+      </div>
+      <div class="items">
+        <article class="menu-item">
+          <img src="assets/Coffee/latte.jpg" alt="Latte with latte art in a green cup" loading="lazy" />
+          <div class="item-description"><h4>Latte</h4><p>Smooth espresso with steamed milk.</p></div>
+          <p class="price">$3.50</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Coffee/iced-coffee.jpg" alt="Iced coffee with milk in a glass" loading="lazy" />
+          <div class="item-description"><h4>Iced Coffee</h4><p>Chilled coffee over ice.</p></div>
+          <p class="price">$2.90</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Coffee/americano.jpg" alt="Black americano in a green cup and saucer" loading="lazy" />
+          <div class="item-description"><h4>Americano</h4><p>Espresso with hot water.</p></div>
+          <p class="price">$2.50</p>
+        </article>
+      </div>
+    </section>
+    <section class="category" id="non-coffee" aria-labelledby="non-coffee-heading">
+      <div class="category-heading">
+        <div class="category-label">
+          <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10l-1 18H8L7 3ZM8 7h8M9 11h6M10 15h4"/></svg></span>
+          <h2 id="non-coffee-heading">NON-COFFEE</h2>
+        </div>
+        <a class="view-all" href="non-coffee.html">View all <span aria-hidden="true">›</span></a>
+      </div>
+      <div class="items">
+        <article class="menu-item">
+          <img src="assets/Non-Coffee/matcha-latte.jpg" alt="Matcha latte with heart latte art" loading="lazy" />
+          <div class="item-description"><h4>Matcha Latte</h4><p>Smooth matcha with steamed milk.</p></div>
+          <p class="price">$3.90</p>
+        </article>
+      </div>
+    </section>
+    <section class="category" id="starters" aria-labelledby="starters-heading">
+      <div class="category-heading">
+        <div class="category-label">
+          <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0ZM8 21h8M8 4c-1 1 1 2 0 4M12 3c-1 1 1 2 0 4M16 4c-1 1 1 2 0 4"/></svg></span>
+          <h2 id="starters-heading">STARTERS</h2>
+        </div>
+        <a class="view-all" href="starters.html">View all <span aria-hidden="true">›</span></a>
+      </div>
+      <div class="items">
+        <article class="menu-item">
+          <img src="assets/Starters/starter-chicken-tenders.jpg" alt="Crispy chicken tenders with fries, salad and dips" loading="lazy" />
+          <div class="item-description"><h4>Chicken Tenders</h4><p>Crispy chicken strips with fries and two dips.</p></div>
+          <p class="price">$7.50</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Starters/starter-cheese-bites.jpg" alt="Cheese canapés with cherry tomatoes, prosciutto and walnuts" loading="lazy" />
+          <div class="item-description"><h4>Cheese Bites</h4><p>Cheese canapés with tomato, prosciutto and walnuts.</p></div>
+          <p class="price">$8.90</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Starters/starter-chicken-bites.jpg" alt="Spiced crispy chicken bites with parsley" loading="lazy" />
+          <div class="item-description"><h4>Spiced Chicken Bites</h4><p>Crispy seasoned chicken bites with fresh parsley.</p></div>
+          <p class="price">$6.90</p>
+        </article>
+      </div>
+    </section>
+    <section class="category" id="mains" aria-labelledby="mains-heading">
+      <div class="category-heading">
+        <div class="category-label">
+          <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 11V9M10 9h4M2 21h20"/></svg></span>
+          <h2 id="mains-heading">MAINS</h2>
+        </div>
+        <a class="view-all" href="mains.html">View all <span aria-hidden="true">›</span></a>
+      </div>
+      <div class="items">
+        <article class="menu-item">
+          <img src="assets/Mains/main-grilled-steak.jpg" alt="Grilled steak with arugula, cherry tomatoes and lemon" loading="lazy" />
+          <div class="item-description"><h4>Grilled Steak</h4><p>Grilled steak with arugula, tomatoes and lemon.</p></div>
+          <p class="price">$14.50</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Mains/main-beef-lasagna.jpg" alt="Beef lasagna topped with parmesan and basil" loading="lazy" />
+          <div class="item-description"><h4>Beef Lasagna</h4><p>Layers of pasta, beef ragù and ricotta.</p></div>
+          <p class="price">$11.90</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Mains/main-chicken-schnitzel.jpg" alt="Chicken schnitzel with rice and green beans" loading="lazy" />
+          <div class="item-description"><h4>Chicken Schnitzel</h4><p>Crispy breaded chicken with rice and green beans.</p></div>
+          <p class="price">$12.50</p>
+        </article>
+      </div>
+    </section>
+    <section class="category" id="pastries" aria-labelledby="pastries-heading">
+      <div class="category-heading">
+        <div class="category-label">
+          <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10 12 3l8 7v11H4V10ZM4 10h16M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></span>
+          <h2 id="pastries-heading">PASTRIES</h2>
+        </div>
+        <a class="view-all" href="pastries.html">View all <span aria-hidden="true">›</span></a>
+      </div>
+      <div class="items">
+        <article class="menu-item">
+          <img src="assets/Pastries/chocolate-cookie.jpg" alt="Stack of chocolate sandwich cookies" loading="lazy" />
+          <div class="item-description"><h4>Chocolate Cookie</h4><p>Classic cookie with chocolate chips.</p></div>
+          <p class="price">$1.80</p>
+        </article>
+        <article class="menu-item">
+          <img src="assets/Pastries/Cake-Slices.jpg" alt="Slices of layered cake" loading="lazy" />
+          <div class="item-description"><h4>Cake Slices</h4><p>Layered cake with one slice</p></div>
+          <p class="price">2.80$</p>
+          </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <aside class="delivery-banner">
+        <span class="delivery-icon" aria-hidden="true">
+          <svg viewBox="0 0 44 34"><rect x="5" y="6" width="11" height="9" rx="1.5"/><path d="M10.5 6v9M4 20.5c0-3 2.4-5 5.5-5H19l2.5 6H4.5"/><path d="M14 27h14M21.5 21.5 28 27M28 27l3-13.5h-4.5M26.5 13.5h6"/><circle cx="9" cy="27" r="3.6"/><circle cx="35" cy="27" r="3.6"/><path d="M31 14l4 9.5"/></svg>
+        </span>
+        <div class="delivery-copy"><h3>We deliver to you!</h3><p>Fast &amp; fresh to your door.</p></div>
+        <span class="delivery-arrow" aria-hidden="true">›</span>
+      </aside>
+    </div>
+  </footer>
+</body>
+</html>
