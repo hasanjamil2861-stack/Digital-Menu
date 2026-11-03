@@ -1,28 +1,36 @@
-# BREW CO. — Digital QR Menu (responsive, multi-page)
+# BREW CO. — Digital QR Menu
 
-## Open
-Extract the ZIP and open `index.html` in any browser. No server or JavaScript needed.
-Fonts (Poppins, Montserrat) load from Google Fonts; without internet the page falls back to system fonts.
+A responsive, multi-page QR digital menu built with **HTML & CSS** only.
+Customers scan the QR code on the table to open the menu on their phones.
+
+## Live links
+- **Menu:** https://hasanjamil2861-stack.github.io/Digital-Menu/
+- **QR code page:** https://hasanjamil2861-stack.github.io/Digital-Menu/qr.html
 
 ## Pages
-- `index.html` — home: hero, then featured items for Coffee, Non-coffee, Starters, Mains and Pastries, each with "View all".
+- `index.html` — home: hero banner, then featured items for Coffee, Non-Coffee, Starters, Mains and Pastries, each with "View all".
 - `coffee.html`, `non-coffee.html`, `starters.html`, `mains.html`, `pastries.html` — the "View all" pages with every item in that category.
+- `qr.html` — printable QR code that opens the menu.
 
-The navbar (logo, menu button, cart) and the "We deliver to you!" footer are the same on every page;
-only the page content changes. The ☰ menu icon is decorative (no dropdown).
+The navbar (logo, menu icon, cart) and the "We deliver to you!" footer are the same on every page.
+The ☰ menu icon and the cart icon are decorative only and not clickable, as required.
 
 ## Responsive
 - Small phones (under 360px): compact sizes.
-- Phones: single-column list, exactly like the design.
+- Phones: single-column list, matching the provided design.
 - Tablets (600px+): two columns of items.
-- Laptops and desktops (1024px+): three columns, large hero.
+- Laptops and desktops (1024px+): three columns and a larger hero.
 - Large screens (1440px+): wider layout.
 
 ## QR code
-`qr.html` shows the printable QR code (`assets/qr.png`). It opens https://hasanjamil2861-stack.github.io/Digital-Menu/ — if the site link changes, generate a new QR.
+`qr.html` shows the QR code (`assets/qr.png`), which opens https://hasanjamil2861-stack.github.io/Digital-Menu/.
+Press **Ctrl + P** on that page to print only the QR card for the tables.
+If the site link changes, a new QR code must be generated.
 
-## Changing photos, names and prices
-Starters and Mains prices are placeholders — update them to the real prices.
-Each featured item appears in `index.html` and in its category page, so change both.
-To swap a photo, replace the file in `assets/` keeping the same file name.
-The banner image is `assets/hero-latte.jpg`.
+## Editing the menu
+- Each featured item appears in `index.html` and in its category page, so update both.
+- To change a photo, replace the file in `assets/` and keep the same file name.
+- The hero banner image is `assets/hero-latte.jpg`.
+
+## Tech stack
+HTML5 · CSS3 · Google Fonts (Poppins, Montserrat) · GitHub Pages

@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ================= HEAD: page settings, fonts and styles ================= -->
 <head>
+  <!-- Text encoding and mobile scaling (makes the page responsive on phones) -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#fffefa" />
+  <!-- Browser tab title -->
   <title>BREW CO. | Scan Our Menu</title>
+  <!-- Google Fonts: Poppins (body text) and Montserrat (logo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <!-- Main stylesheet shared by all pages (navbar, footer, colors) -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Extra styles used only on this QR page -->
   <style>
     /* ---------- QR PAGE ---------- */
+
+    /* Page area: centers the QR card */
     .qr-page {
       display: grid;
       place-items: center;
       padding: 24px 0 40px;
     }
+
+    /* White card that holds the title, QR code and steps */
     .qr-card {
       width: min(100%, 380px);
       padding: 32px 28px 28px;
@@ -24,6 +35,8 @@
       box-shadow: 0 10px 30px rgba(60, 40, 25, .08);
       text-align: center;
     }
+
+    /* Card title: "Scan to see our menu" */
     .qr-card h1 {
       margin: 0;
       color: var(--brown);
@@ -31,12 +44,17 @@
       font-weight: 600;
       line-height: 1.2;
     }
+    /* Second line of the title ("our menu") in a lighter brown */
     .qr-card h1 span { color: #a8875f; }
+
+    /* Small text under the title */
     .qr-card > p {
       margin: 10px 0 0;
       color: var(--muted);
       font-size: 13px;
     }
+
+    /* Frame with a border around the QR image */
     .qr-frame {
       margin: 24px auto 0;
       width: 240px;
@@ -45,11 +63,14 @@
       border-radius: 18px;
       background: #fff;
     }
+    /* QR image: fills the frame and stays square */
     .qr-frame img {
       width: 100%;
       height: auto;
       aspect-ratio: 1;
     }
+
+    /* The 3 steps in one row: Open camera, Scan, Enjoy */
     .qr-steps {
       display: flex;
       justify-content: center;
@@ -60,7 +81,9 @@
       color: #6b5444;
       font-size: 12px;
     }
+    /* Each step: number + text side by side */
     .qr-steps li { display: flex; align-items: center; gap: 6px; }
+    /* Step number inside a small tan circle */
     .qr-steps b {
       display: grid;
       place-items: center;
@@ -71,6 +94,8 @@
       color: #fff;
       font-size: 11px;
     }
+
+    /* Website link under the steps */
     .qr-link {
       display: inline-block;
       margin-top: 18px;
@@ -80,6 +105,7 @@
       word-break: break-all;
     }
 
+    /* Tablets and bigger screens (600px+): larger card and QR code */
     @media (min-width: 600px) {
       .qr-card { width: 420px; padding: 40px 36px 34px; }
       .qr-card h1 { font-size: 30px; }
@@ -95,11 +121,14 @@
   </style>
 </head>
 <body>
+  <!-- ================= HEADER / NAVBAR (same on every page) ================= -->
   <header class="site-header">
     <div class="container topbar">
+      <!-- Hamburger icon: decorative only, not clickable (as required in the task) -->
       <span class="header-icon menu-symbol" aria-hidden="true">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" /></svg>
       </span>
+      <!-- Logo: cup icon + BREW CO. + COFFEE & MORE (links back to the home page) -->
       <a class="brand" href="index.html" aria-label="Brew Co. Coffee and More, home">
         <svg class="brand-cup" viewBox="0 0 40 34" aria-hidden="true">
           <path d="M19 2.5v2.5"/>
@@ -110,6 +139,7 @@
         <span class="brand-name">BREW CO.</span>
         <span class="brand-subtitle">COFFEE &amp; MORE</span>
       </a>
+      <!-- Cart icon with badge: decorative only, not clickable (as required in the task) -->
       <span class="header-icon cart-symbol" role="img" aria-label="Shopping cart, 0 items">
         <svg viewBox="0 0 28 28" aria-hidden="true">
           <path d="M2.5 4.5h3.2l2.8 13.6a2.2 2.2 0 0 0 2.2 1.8h10.6a2.2 2.2 0 0 0 2.1-1.6l2.1-8.8H7.2"/>
@@ -120,27 +150,35 @@
     </div>
   </header>
 
+  <!-- ================= MAIN CONTENT: QR card ================= -->
   <main class="container qr-page">
     <section class="qr-card" aria-labelledby="qr-heading">
+      <!-- Title and short instruction -->
       <h1 id="qr-heading">Scan to see<br /><span>our menu</span></h1>
       <p>Point your phone camera at the code.</p>
 
+      <!-- QR code image: opens https://hasanjamil2861-stack.github.io/Digital-Menu/ -->
+      <!-- If the site link changes, generate a new QR and replace assets/qr.png -->
       <div class="qr-frame">
         <img
           src="assets/qr.png"
           alt="QR code that opens the BREW CO. digital menu" />
       </div>
 
+      <!-- 3 simple steps for the customer -->
       <ol class="qr-steps">
         <li><b>1</b> Open camera</li>
         <li><b>2</b> Scan</li>
         <li><b>3</b> Enjoy</li>
       </ol>
 
+      <!-- Website link (opens the menu home page) -->
       <a class="qr-link" href="index.html">hasanjamil2861-stack.github.io/Digital-Menu</a>
     </section>
   </main>
+  <!-- ================= END MAIN CONTENT ================= -->
 
+  <!-- ================= FOOTER: delivery banner (same on every page) ================= -->
   <footer class="site-footer">
     <div class="container">
       <aside class="delivery-banner">

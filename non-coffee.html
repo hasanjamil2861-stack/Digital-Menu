@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ================= HEAD: page settings, fonts and stylesheet ================= -->
 <head>
+  <!-- Text encoding and mobile scaling (makes the page responsive on phones) -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#fffefa" />
+  <!-- Browser tab title -->
   <title>BREW CO. | Non-Coffee</title>
+  <!-- Google Fonts: Poppins (body text) and Montserrat (logo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <!-- Main stylesheet shared by all pages -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ================= HEADER / NAVBAR (same on every page) ================= -->
   <header class="site-header">
     <div class="container topbar">
+      <!-- Hamburger icon: decorative only, not clickable (as required in the task) -->
       <span class="header-icon menu-symbol" aria-hidden="true">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17" /></svg>
       </span>
+      <!-- Logo: cup icon + BREW CO. + COFFEE & MORE (links back to the home page) -->
       <a class="brand" href="index.html" aria-label="Brew Co. Coffee and More, home">
         <svg class="brand-cup" viewBox="0 0 40 34" aria-hidden="true">
           <path d="M19 2.5v2.5"/>
@@ -26,6 +34,7 @@
         <span class="brand-name">BREW CO.</span>
         <span class="brand-subtitle">COFFEE &amp; MORE</span>
       </a>
+      <!-- Cart icon with badge: decorative only, not clickable (as required in the task) -->
       <span class="header-icon cart-symbol" role="img" aria-label="Shopping cart, 0 items">
         <svg viewBox="0 0 28 28" aria-hidden="true">
           <path d="M2.5 4.5h3.2l2.8 13.6a2.2 2.2 0 0 0 2.2 1.8h10.6a2.2 2.2 0 0 0 2.1-1.6l2.1-8.8H7.2"/>
@@ -35,15 +44,24 @@
       </span>
     </div>
   </header>
+
+  <!-- ================= MAIN CONTENT: all NON-COFFEE items ================= -->
   <main class="container">
+    <!-- Back link: returns to the NON-COFFEE section on the home page -->
     <nav class="back-link-wrap"><a class="back-link" href="index.html#non-coffee">‹ Back to menu</a></nav>
+
+    <!-- Page title: NON-COFFEE icon + name -->
     <div class="page-title">
       <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10l-1 18H8L7 3ZM8 7h8M9 11h6M10 15h4"/></svg></span>
       <h1>NON-COFFEE</h1>
     </div>
+
+    <!-- Full list of NON-COFFEE items -->
     <section class="category category-page" aria-labelledby="non-coffee-all-heading">
+      <!-- Hidden heading for screen readers only (not visible on the page) -->
       <h2 id="non-coffee-all-heading" class="visually-hidden">All Non-Coffee items</h2>
       <div class="items">
+        <!-- One menu item: photo, name + description, price -->
         <article class="menu-item">
           <img src="assets/Non-Coffee/matcha-latte.jpg" alt="Matcha latte with heart latte art" loading="lazy" />
           <div class="item-description"><h4>Matcha Latte</h4><p>Smooth matcha with steamed milk.</p></div>
@@ -77,6 +95,9 @@
       </div>
     </section>
   </main>
+  <!-- ================= END MAIN CONTENT ================= -->
+
+  <!-- ================= FOOTER: delivery banner (same on every page) ================= -->
   <footer class="site-footer">
     <div class="container">
       <aside class="delivery-banner">
