@@ -18,9 +18,11 @@ only the page content changes. The ☰ menu icon is decorative (no dropdown).
 - Laptops and desktops (1024px+): three columns, large hero.
 - Large screens (1440px+): wider layout.
 
+## QR code
+`qr.html` shows the printable QR code (`assets/qr.png`). It opens https://hasanjamil2861-stack.github.io/Digital-Menu/ — if the site link changes, generate a new QR.
+
 ## Changing photos, names and prices
-Starters and Mains prices are placeholders — update them to the real prices.
 Starters and Mains prices are placeholders — update them to the real prices.
 Each featured item appears in `index.html` and in its category page, so change both.
 To swap a photo, replace the file in `assets/` keeping the same file name.
-The banner has two sizes: `hero-latte.jpg` (1400px, phones/laptops) and `hero-latte-4k.jpg` (3840px, 4K and retina screens); the browser picks the right one automatically.
+The banner image is `assets/hero-latte.jpg`.
